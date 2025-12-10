@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@theme {
+  /* Definiujemy kolory firmowe - profesjonalny granat i energetyczny turkus/błękit */
+  --color-primary: #0f172a; /* Ciemny granat - profesjonalizm */
+  --color-accent: #0ea5e9;  /* Jasny niebieski - nowoczesność */
+  --color-secondary: #10b981; /* Szmaragdowy - bezpieczeństwo/pozytywny wydźwięk */
+  --color-light: #f8fafc;
+
+  /* Fonty (zakładam, że użyjemy Google Fonts w layout.tsx) */
+  --font-sans: var(--font-sans);
+}
+
+/* Podstawowe style dla płynnego przewijania */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-light text-slate-800 antialiased;
+}
+
+/* Klasy pomocnicze dla sekcji */
+.section-padding {
+  @apply py-16 px-4 sm:px-6 lg:px-8;
+}
