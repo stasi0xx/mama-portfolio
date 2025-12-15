@@ -26,18 +26,18 @@ export default function Home() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8 animate-in fade-in slide-in-from-bottom-10 duration-700">
               <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-500/10 text-emerald-400 text-sm font-semibold border border-emerald-500/20 backdrop-blur-sm">
-                <ShieldCheck size={16} /> Ekspert Bezpieczeństwa & AI
+                <ShieldCheck size={16} /> MFK Consulting
               </div>
 
               <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-[1.1] tracking-tight">
-                Bezpieczeństwo. <br/>
-                <span className="text-emerald-400">Innowacja.</span> <br/>
-                Skuteczność.
+                Profesjonalne BHP. <br/>
+                <span className="text-emerald-400">Standardy ISO.</span> <br/>
+                Bezpieczeństwo.
               </h1>
 
               <p className="text-lg text-slate-300 max-w-xl leading-relaxed">
-                Jako <strong>Członek Zarządu OSPSBHP (o. Gdańsk)</strong> i Główny Specjalista, łączę twarde kompetencje techniczne z zaawansowanym zarządzaniem.
-                Nowoczesne BHP to strategiczny filar Twojego biznesu, a nie tylko formalność.
+                <strong>MFK Consulting</strong> to jakość firmowana nazwiskiem Głównego Specjalisty ds. BHP.
+                Łączymy twarde kompetencje techniczne z nowoczesnym zarządzaniem procesami bezpieczeństwa.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 pt-2">
