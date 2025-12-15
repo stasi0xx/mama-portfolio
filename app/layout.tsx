@@ -8,9 +8,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-    // Dane wyciągnięte z nagłówka CV [cite: 1, 2, 3]
-    title: "Małgorzata Frelich-Korycka | Ekspert BHP & PPOŻ",
-    description: "Główny Specjalista ds. BHP, Auditor ISO, Inspektor PPOŻ. Ponad 20 lat doświadczenia w bezpieczeństwie pracy i nowoczesnych technologiach.",
+    title: "Małgorzata Frelich-Korycka | Ekspert BHP, PPOŻ i ISO",
+    description: "Główny Specjalista ds. BHP i PPOŻ, Auditor Wiodący ISO. Oferuję nadzór, dokumentację, audyty oraz wdrażanie AI w prewencji wypadkowej.",
+    keywords: ["BHP", "PPOŻ", "ISO", "Audyt BHP", "Nadzór BHP", "Gdynia", "Trójmiasto", "Bezpieczeństwo Pracy"],
 };
 
 export default function RootLayout({
@@ -19,35 +19,39 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="pl">
-        <body className={`${inter.variable} min-h-screen flex flex-col`}>
-        {/* Prosty Navbar */}
-        <nav className="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-200 shadow-sm">
+        <html lang="pl" className="scroll-smooth">
+        <body className={`${inter.variable} min-h-screen flex flex-col bg-slate-50 text-slate-900`}>
+        {/* Navbar */}
+        <nav className="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-200/60 shadow-sm transition-all duration-300">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="flex justify-between h-16 items-center">
-                    <span className="font-bold text-xl text-primary">Małgorzata</span>
-                    <div className="hidden md:flex space-x-8 text-sm font-medium text-slate-600">
-                        <a href="#o-mnie" className="hover:text-accent transition">O mnie</a>
-                        <a href="#galeria" className="hover:text-accent transition">Galeria</a>
-                        <a href="#kompetencje" className="hover:text-accent transition">Kompetencje</a>
-                        <a href="#doswiadczenie" className="hover:text-accent transition">Doświadczenie</a>
+                <div className="flex justify-between h-20 items-center">
+                    <a href="#" className="flex flex-col">
+                        <span className="font-bold text-xl text-slate-900 leading-none">Małgorzata</span>
+                        <span className="text-sm font-medium text-slate-500">Frelich-Korycka</span>
+                    </a>
+                    <div className="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-600">
+                        <a href="#dlaczego-ja" className="hover:text-emerald-600 transition">Dlaczego ja?</a>
+                        <a href="#oferta" className="hover:text-emerald-600 transition">Oferta</a>
+                        <a href="#doswiadczenie" className="hover:text-emerald-600 transition">Doświadczenie</a>
+                        <a href="#galeria" className="hover:text-emerald-600 transition">Realizacje</a>
 
-                        <a href="#kontakt" className="px-4 py-2 bg-primary text-white rounded-full hover:bg-slate-800 transition">Kontakt</a>
+                        <a href="#kontakt" className="px-5 py-2.5 bg-slate-900 text-white rounded-full hover:bg-emerald-600 transition shadow-lg hover:shadow-emerald-500/20">
+                            Kontakt
+                        </a>
                     </div>
                 </div>
             </div>
         </nav>
 
-        <main className="flex-grow pt-16">
+        <main className="flex-grow pt-20">
             {children}
         </main>
 
-        {/* Footer z informacją o RODO z CV [cite: 55, 56] */}
-        <footer className="bg-slate-900 text-slate-400 py-8 text-center text-xs px-4">
-            <p>© {new Date().getFullYear()} Małgorzata Frelich-Korycka. Wszelkie prawa zastrzeżone.</p>
-            <p className="mt-2 max-w-2xl mx-auto opacity-50">
-                Strona ma charakter informacyjny.
-            </p>
+        <footer className="bg-slate-950 text-slate-400 py-12 border-t border-slate-800 text-center text-sm">
+            <div className="max-w-7xl mx-auto px-4">
+                <p className="mb-2">© {new Date().getFullYear()} Małgorzata Frelich-Korycka. Bezpieczeństwo. Innowacja. Skuteczność.</p>
+                <p className="opacity-50">Strona profesjonalna.</p>
+            </div>
         </footer>
         </body>
         </html>
