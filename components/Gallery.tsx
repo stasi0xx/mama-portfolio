@@ -2,7 +2,7 @@ import Image from "next/image";
 import { BlurFade } from "@/components/ui/blur-fade";
 
 // Generujemy tablicę ścieżek
-const images = Array.from({ length: 19 }, (_, i) => `/zdjecie${i + 1}.jpeg`);
+const images = Array.from({ length: 18 }, (_, i) => `/zdjecie${i + 1}.jpeg`);
 
 export function Gallery() {
     return (
