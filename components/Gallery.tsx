@@ -2,14 +2,14 @@ import Image from "next/image";
 import { BlurFade } from "@/components/ui/blur-fade";
 
 // Generujemy tablicę ścieżek
-const images = Array.from({ length: 21 }, (_, i) => `/zdjecie${i + 1}.jpeg`);
+const images = Array.from({ length: 19 }, (_, i) => `/zdjecie${i + 1}.jpeg`);
 
 export function Gallery() {
     return (
         <section id="galeria" className="py-24 bg-white overflow-hidden">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-16">
-                    <h2 className="text-3xl font-bold text-slate-900 mb-4">Realizacje i Szkolenia</h2>
+                    <h2 className="text-3xl font-bold text-slate-900 mb-4">Galeria Wydarzeń</h2>
                     <p className="text-slate-600 max-w-2xl mx-auto">
                         Zobacz jak wygląda bezpieczeństwo w praktyce. Zdjęcia ze szkoleń, audytów i konferencji branżowych.
                     </p>
